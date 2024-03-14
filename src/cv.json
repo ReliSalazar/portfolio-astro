@@ -6,7 +6,7 @@
     "email": "naitvenefy@gmail.com",
     "phone": "+52 8712632606",
     "url": "https://github.com/ReliSalazar",
-    "summary": "I am a highly skilled and experienced Front-End Developer with over 4 years of experience in building high-quality, user-friendly web applications. I am proficient in a variety of front-end technologies, including React, Vue, Astro, Tailwind, Styled Components, SCSS, and TypeScript. I am also a strong problem solver, and I have excellent communication and collaboration skills. In my curent job, I led a team of 3 developers in the delivery of a major project.",
+    "summary": "I am a highly skilled and experienced Front-End Developer with over 4 years of experience in building high-quality, user-friendly web applications. I have excellent communication and collaboration skills. In my curent job, I led a team of 3 developers in the delivery of a major project.",
     "location": {
       "address": "",
       "postalCode": "42660",
@@ -34,22 +34,31 @@
   },
   "work": [
     {
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
-      "highlights": ["Started the company"]
+      "name": "Geest",
+      "position": "Front-End Developer and team leader",
+      "url": "https://geest.app",
+      "startDate": "2022-10-09",
+      "endDate": null,
+      "summary": "I've created a lot of projects, tools and sections for this web app. Dynamic graphs that can be resized and reordered on a dynamic dashboard, a full working text editor with highly custom styling, mark down, dynamic fields from tasks an more, and even a pdf editor and generator from scratch and a lot more.",
+      "highlights": ["Team lead of front end team"]
     },
     {
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
-      "highlights": ["Started the company"]
+      "name": "Gorilas Online",
+      "position": "Front-End Developer",
+      "url": "https://appsgorilasonline.com/",
+      "startDate": "2021-06-07",
+      "endDate": "2022-09-25",
+      "summary": "My job on this company was create almost 4 landing pages per week with React or Vue, with Tailwind, Bootstrap, SCSS, CSS or Styled-Components, and make changes on old pages from current clients.",
+      "highlights": ["Front end dev"]
+    },
+    {
+      "name": "Freelance web development",
+      "position": "Front-End Developer",
+      "url": "",
+      "startDate": "2020-03-09",
+      "endDate": "2022-10-03",
+      "summary": "My first project we're a lot of landing pages as a freelance, knocking doors on local stores asking if they need my services.",
+      "highlights": ["Front end dev"]
     }
   ],
   "skills": [
@@ -106,14 +115,18 @@
   ],
   "languages": [
     {
-      "language": "English",
+      "language": "Spanish",
       "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "B2"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "name": "Music",
+      "keywords": ["Composition", "Art"]
     }
   ],
   "projects": [
