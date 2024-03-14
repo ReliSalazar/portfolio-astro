@@ -1,0 +1,75 @@
+{
+  "basics": {
+    "name": "Kevin Enrique Loera Salazar",
+    "label": "Front-end developer with 4+ years of experience",
+    "image": "https://avatars.githubusercontent.com/u/39719803?v=4",
+    "email": "naitvenefy@gmail.com",
+    "phone": "+52 8712632606",
+    "url": "https://github.com/ReliSalazar",
+    "summary": "I am a highly skilled and experienced Front-End Developer with over 4 years of experience in building high-quality, user-friendly web applications. I am proficient in a variety of front-end technologies, including React, Vue, Astro, Tailwind, Styled Components, SCSS, and TypeScript. I am also a strong problem solver, and I have excellent communication and collaboration skills. In my curent job, I led a team of 3 developers in the delivery of a major project. I am also self-motivated and eager to learn new technologies. I am confident that I can make a significant contribution to your team.",
+    "location": {
+      "address": "",
+      "postalCode": "42660",
+      "city": "Francisco I. Madero, Hidalgo",
+      "countryCode": "MX",
+      "region": "México"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "ReliSalazar",
+        "url": "https://twitter.com/ReliSalazar"
+      },
+      {
+        "network": "Github",
+        "username": "ReliSalazar",
+        "url": "https://github.com/ReliSalazar"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "ReliSalazar",
+        "url": "https://www.linkedin.com/in/relisalazar/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Company",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description…",
+      "highlights": ["Started the company"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/"
+    }
+  ]
+}
