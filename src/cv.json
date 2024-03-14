@@ -54,9 +54,54 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "name": "JavaScript",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "JavaScript"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "JavaScript", "TypeScript"]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "JavaScript", "TypeScript"]
+    },
+    {
+      "name": "Vue",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "JavaScript", "TypeScript"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "CSS"]
+    },
+    {
+      "name": "Styled Components",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "CSS"]
+    },
+    {
+      "name": "Rust",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Backend", "Desktop Development"]
+    },
+    {
+      "name": "Node",
+      "level": "Basic",
+      "keywords": ["Web Development", "Backend", "JavaScript", "TypeScript"]
+    },
+    {
+      "name": "PHP",
+      "level": "Basic",
+      "keywords": ["Web Development", "Backend", "PHP"]
+    },
+    {
+      "name": "MySQL",
+      "level": "Basic",
+      "keywords": ["Web Development", "Backend", "sql", "db"]
     }
   ],
   "languages": [
