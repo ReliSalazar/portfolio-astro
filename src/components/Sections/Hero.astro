@@ -8,8 +8,7 @@ import LinkedIn from "@/icons/LinkedIn.astro";
 import WolrdMap from "@/icons/WorldMap.astro";
 import X from "@/icons/X.astro";
 
-const { name, label, image, email, phone, location, profiles } =
-  basics;
+const { name, label, image, email, phone, location, profiles } = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
@@ -17,6 +16,9 @@ const SOCIAL_ICONS: Record<string, any> = {
   LinkedIn,
   X,
 };
+
+const linkedinInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedinUrl = linkedinInfo?.url;
 ---
 
 <Section>
@@ -28,7 +30,10 @@ const SOCIAL_ICONS: Record<string, any> = {
         <WolrdMap />
         {city}, {region}
       </span>
-      <footer>
+      <footer class="print">
+        {email} • {phone} • {linkedinUrl}
+      </footer>
+      <footer class="no-print">
         {
           email && (
             <a
@@ -121,6 +126,8 @@ const SOCIAL_ICONS: Record<string, any> = {
   }
 
   footer {
+    color: #555;
+    font-size: 0.65rem;
     display: flex;
     gap: 4px;
     margin-top: 8px;
