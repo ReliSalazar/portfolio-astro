@@ -157,5 +157,15 @@
       "highlights": ["React", "Typescript", "react-chartjs-2"],
       "url": "/projects/dynamic-graphs"
     }
+  ],
+  "entries": [
+    {
+      "title": "Idea Oriented Programming",
+      "publishDate": "2022-04-29",
+      "lastEditDate": null,
+      "content": "A grid for sorting, resizing, and visualizing different types of charts. From bar charts, through doughnut charts, to entire tables created with dynamic queries chosen by the user.",
+      "tags": ["philosophy", "code", "programming"],
+      "url": "/blog/idea-oriented-programming"
+    }
   ]
 }
