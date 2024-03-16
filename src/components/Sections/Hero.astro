@@ -24,7 +24,9 @@ const linkedinUrl = linkedinInfo?.url;
 <Section>
   <div class="container">
     <div class="info">
-      <h1>{name}</h1>
+      <h1>
+        {name}
+      </h1>
       <h2>{label}</h2>
       <span>
         <WolrdMap />
@@ -100,6 +102,9 @@ const linkedinUrl = linkedinInfo?.url;
 
   h1 {
     font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 4px;
   }
 
   h2 {

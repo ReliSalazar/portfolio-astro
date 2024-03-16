@@ -131,58 +131,31 @@
   ],
   "projects": [
     {
-      "name": "Project",
+      "name": "PDF Editor",
       "isActive": true,
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
+      "startDate": "2023-12-11",
+      "endDate": null,
+      "description": "A fully functional PDF editor created from scratch. It not only serves to configure and edit them, but also to automatically generate them with data collected from other parts of the web application.",
+      "highlights": ["React", "Typescript", "styled-components"],
+      "url": "/"
     },
     {
-      "name": "Project",
+      "name": "Text Editor",
       "isActive": true,
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
+      "startDate": "2023-08-07",
+      "endDate": null,
+      "description": "A full-featured text editor, with a wide variety of possible formats. From adding color, alignment, titles, and font, to shortcuts and fields with dynamic content linked to other parts of the web application for generating text templates.",
+      "highlights": ["React", "Typescript", "draftjs", "styled-components"],
+      "url": "/"
     },
     {
-      "name": "Project",
+      "name": "Dynamic graphs, drag and drop grid",
       "isActive": true,
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Project",
-      "isActive": true,
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Project",
-      "isActive": true,
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Project",
-      "isActive": true,
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
+      "startDate": "2023-06-12",
+      "endDate": null,
+      "description": "A grid for sorting, resizing, and visualizing different types of charts. From bar charts, through doughnut charts, to entire tables created with dynamic queries chosen by the user.",
+      "highlights": ["React", "Typescript", "react-chartjs-2"],
+      "url": "/"
     }
   ]
 }

@@ -38,6 +38,31 @@ import { projects } from "@cv";
       )
     }
   </ul>
+
+  <div class="print more-projects">
+    <a href="/" title="More projects at: https:relisalazar.com/projects">
+      More projects at: https:relisalazar.com/projects
+    </a>
+  </div>
+
+  <div class="no-print more-projects">
+    <a href="/" title={`Go to full projects list`}>
+      see more projects
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M5 12l14 0"></path><path d="M15 16l4 -4"></path><path d="M15 8l4 4"
+        ></path></svg
+      >
+    </a>
+  </div>
 </Section>
 
 <style>
@@ -82,6 +107,31 @@ import { projects } from "@cv";
 
   article a:hover {
     text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+  }
+
+  .more-projects {
+    display: flex;
+    padding-block: 8px;
+    margin-inline: -16px;
+  }
+
+  .more-projects a {
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 2px 8px;
+    color: #444;
+    transition: border 0.3s ease, color 0.3s ease;
+  }
+
+  .more-projects a:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color-dark);
   }
 
   footer {
