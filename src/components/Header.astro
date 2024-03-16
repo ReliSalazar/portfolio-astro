@@ -1,0 +1,60 @@
+<header class="no-print">
+  <nav>
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/projects">Projects</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 8px;
+  }
+
+  ul {
+    display: flex;
+    gap: 16px;
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    margin-inline: auto;
+    padding: 0.2rem 2rem;
+    transition: background 0.3s ease;
+  }
+
+  ul:hover {
+    background: #eee;
+  }
+
+  a {
+    font-size: 0.8rem;
+    color: #555;
+    font-weight: 700;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+  }
+</style>
