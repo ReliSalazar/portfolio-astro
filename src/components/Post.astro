@@ -4,21 +4,16 @@ import Section from "@/components/Section.astro";
 
 interface Props {
   title: string;
-  header?: boolean;
+  header?: string;
 }
 
 const { title, header } = Astro.props;
-
-let postHeader = "";
-if (header) {
-  postHeader = `/public/projects/${title.toLowerCase().replace(" ", "-")}/header.png`;
-}
 ---
 
 <Layout title={`<λ ${title} />`}>
   <main>
     <Section>
-      {postHeader && <img class="header-img" src={postHeader} alt="" />}
+      {header && <img class="header-img" src={header} alt="" />}
 
       <h1>{title}</h1>
 
