@@ -4,41 +4,31 @@ import Section from "@/components/Section.astro";
 import { projects } from "@cv";
 ---
 
-<Layout title='<λ Projects />'>
+<Layout title="<λ Projects />">
   <main>
     <Section>
       <ul>
         {
-          projects.map(
-            ({
-              name,
-              isActive,
-              startDate,
-              endDate,
-              description,
-              highlights,
-              url,
-            }) => (
-              <li>
-                <article>
-                  <header>
-                    <h3>
-                      <a href={url} title={`Go to the project ${name}`}>
-                        {name}
-                      </a>
-                      {isActive && <span>&bull;</span>}
-                    </h3>
-                    <p>{description}</p>
-                  </header>
-                  <footer>
-                    {highlights.map((highlight) => (
-                      <span>{highlight}</span>
-                    ))}
-                  </footer>
-                </article>
-              </li>
-            )
-          )
+          projects.map(({ name, isActive, description, highlights, url }) => (
+            <li>
+              <article>
+                <header>
+                  <h3>
+                    <a href={url} title={`Go to the project ${name}`}>
+                      {name}
+                    </a>
+                    {isActive && <span>&bull;</span>}
+                  </h3>
+                  <p>{description}</p>
+                </header>
+                <footer>
+                  {highlights.map((highlight) => (
+                    <span>{highlight}</span>
+                  ))}
+                </footer>
+              </article>
+            </li>
+          ))
         }
       </ul>
     </Section>
@@ -113,4 +103,3 @@ import { projects } from "@cv";
     padding: 0.2rem 0.6rem;
   }
 </style>
-  

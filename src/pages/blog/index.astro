@@ -9,27 +9,25 @@ import { entries } from "@cv";
     <Section>
       <ul>
         {
-          entries.map(
-            ({ title, publishDate, lastEditDate, content, tags, url }) => (
-              <li>
-                <article>
-                  <header>
-                    <h3>
-                      <a href={url} title={`Go to the blog post ${title}`}>
-                        {title}
-                      </a>
-                    </h3>
-                    <p>{content}</p>
-                  </header>
-                  <footer>
-                    {tags.map((tag) => (
-                      <span>{tag}</span>
-                    ))}
-                  </footer>
-                </article>
-              </li>
-            )
-          )
+          entries.map(({ title, content, tags, url }) => (
+            <li>
+              <article>
+                <header>
+                  <h3>
+                    <a href={url} title={`Go to the blog post ${title}`}>
+                      {title}
+                    </a>
+                  </h3>
+                  <p>{content}</p>
+                </header>
+                <footer>
+                  {tags.map((tag) => (
+                    <span>{tag}</span>
+                  ))}
+                </footer>
+              </article>
+            </li>
+          ))
         }
       </ul>
     </Section>
