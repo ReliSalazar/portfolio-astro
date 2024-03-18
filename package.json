@@ -2,6 +2,11 @@
   "name": "portfolio-astro",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@8.15.4",
+  "engines": {
+    "node": ">=21",
+    "pnpm": ">=8"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
