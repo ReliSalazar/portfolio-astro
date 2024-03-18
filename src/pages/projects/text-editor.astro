@@ -1,0 +1,42 @@
+---
+import Post from "@/components/Post.astro";
+---
+
+<Post
+  title="Text Editor"
+  header="/public/projects/text-editor/header.png"
+  publishDate="2024-03-18"
+>
+  <p>This text editor was made with Draft.js, enterely with React.</p>
+  <p>
+    It has a lot of format options, like colors, bold, italics, links, lists,
+    font size, font family and alignment. It also has shortcuts for almost every
+    of those actions.
+  </p>
+  <p>
+    It returns a JSON object that we can use to do a lot of stuff. It also has a
+    custom property to add a custom field that can be read on backend. It can be
+    used for generate templates, like sending a custom notification when a
+    process ends or to make a simple template for an email after a process is
+    aproved or a goal has reached.
+  </p>
+  <p>
+    This is one of the most complex projects I've done, and it has been used on
+    more projects for the company, maybe the most important was our <a
+      href="/projects/text-editor">PDF Editor</a
+    >.
+  </p>
+</Post>
+
+<style>
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+  }
+</style>
