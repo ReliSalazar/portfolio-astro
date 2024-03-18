@@ -5,9 +5,23 @@ import Section from "@/components/Section.astro";
 interface Props {
   title: string;
   header?: string;
+  publishDate: string;
+  lastEditDate?: string;
 }
 
-const { title, header } = Astro.props;
+const { title, header, publishDate, lastEditDate } = Astro.props;
+
+const getFormatedDate = (dateToFormat: string) => {
+  const date = new Date(dateToFormat);
+  const month = date.toLocaleDateString("default", { month: "short" });
+  const day = date.getDate();
+  const year = date.getFullYear();
+  const formatedDate = `${month} ${day}, ${year}`;
+  return formatedDate;
+};
+
+const publish = getFormatedDate(publishDate);
+const lastEdit = lastEditDate ? getFormatedDate(lastEditDate) : "";
 ---
 
 <Layout title={`<λ ${title} />`}>
@@ -16,6 +30,18 @@ const { title, header } = Astro.props;
       {header && <img class="header-img" src={header} alt="" />}
 
       <h1>{title}</h1>
+
+      <div class="dates">
+        <div class="date">
+          <p>date:</p>
+          <time>{publish}</time>
+        </div>
+
+        <div class="date">
+          <p>last edit:</p>
+          <time>{lastEdit}</time>
+        </div>
+      </div>
 
       <div class="content">
         <slot />
@@ -46,10 +72,51 @@ const { title, header } = Astro.props;
     font-size: 2rem;
   }
 
+  h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 4px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+
+  .dates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
+  .date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .date p {
+    line-height: 1.2;
+    font-size: 0.75rem;
+    color: #777;
+  }
+
+  time {
+    font-size: 0.75rem;
+    color: #777;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+
+  span {
+    font-size: 0.75rem;
+    color: #777;
   }
 
   p.note {
