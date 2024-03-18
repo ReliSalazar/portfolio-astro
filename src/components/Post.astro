@@ -31,17 +31,23 @@ const lastEdit = lastEditDate ? getFormatedDate(lastEditDate) : "";
 
       <h1>{title}</h1>
 
-      <div class="dates">
-        <div class="date">
-          <p>date:</p>
-          <time>{publish}</time>
-        </div>
+      {
+        (
+          <div class="dates">
+            <div class="date">
+              <p>date:</p>
+              <time>{publish}</time>
+            </div>
 
-        <div class="date">
-          <p>last edit:</p>
-          <time>{lastEdit}</time>
-        </div>
-      </div>
+            {lastEdit && (
+              <div class="date">
+                <p>last edit:</p>
+                <time>{lastEdit}</time>
+              </div>
+            )}
+          </div>
+        )
+      }
 
       <div class="content">
         <slot />

@@ -2,8 +2,71 @@
 import Post from "@/components/Post.astro";
 ---
 
-<Post title="Pdf Editor" header="/public/projects/pdf-editor/header.png">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi distinctio repudiandae pariatur. Sint a suscipit sunt velit provident iure? Nemo architecto earum esse maiores! Officiis animi ex fuga doloribus esse quisquam enim, fugit corrupti hic, dolorem molestias delectus reprehenderit magnam. Vero illum fugiat facilis et voluptates omnis possimus consequuntur.</p>
+<Post
+  title="Pdf Editor"
+  header="/public/projects/pdf-editor/header.png"
+  publishDate="2024-03-18"
+>
+  <p>
+    This is probably the most complex project I've ever worked on. It's a fully
+    functional PDF editor, built almost entirely from scratch.
+  </p>
+  <p>
+    Essentially, everything serves to generate a huge JSON file that is uploaded
+    to a server, and then, from another section of the page, this JSON is
+    retrieved and sent to the backend to be converted into HTML and then
+    rendered as a PDF file.
+  </p>
+  <p>
+    The editor has a couple of functionalities. Firstly, it has a full page
+    navigation system, which allows pages to be reordered using drag and drop,
+    as well as navigating between them by clicking or typing the page number
+    below. These pages generate a real-time simulation of the content on the
+    pages, so you can always see which content is on which page without manually
+    checking each one.
+  </p>
+  <p>
+    We can add a series of nodes with different types of data. All these nodes
+    have a series of common characteristics. They can all be added by drag and
+    drop on the page. They all have an assigned name, as these are instances, so
+    you can add one on one page and then a duplicate on another, which will take
+    its shared value, allowing you, for example, to have a field with the name
+    of the client you are generating the document for without having to add it
+    again everywhere, or an image field with the company logo without having to
+    upload it once for each page where it will appear, but only uploading it
+    once and then instantiating it.
+  </p>
+  <div class="img-container">
+    <img src="/public/projects/pdf-editor/pdf-editor.png" alt="" />
+  </div>
+  <p>
+    Additionally, these nodes have some individual settings, such as the
+    signature color, position on the sheet, or size, as these fields can also be
+    resized with a simple click and drag.
+  </p>
+  <p>
+    Among them is a field for capturing signatures, in case you want to generate
+    official documents without having to generate a PDF, sign it, and then
+    regenerate it; instead, you simply add the field in a task, the responsible
+    person adds the signature, and the PDF will be automatically generated with
+    the signature in the appropriate place.
+  </p>
+  <p>
+    There is also an image field that respects the aspect ratio of the uploaded
+    image in relation to the container size. These images can retrieve their
+    value from a field in a task, so for example, you can capture evidence for
+    an installation contract, or you can manually upload the image if it's
+    always the same in all formats.
+  </p>
+  <p>
+    Lastly, there are Text Editor nodes. This text editor is another of my
+    projects, and it's quite complex. I have a separate article about this <a
+      href="/projects/text-editor">Text Editor</a
+    >. But to summarize, it offers a wide variety of text formats, as well as
+    the ability to add dynamic fields with values coming from the task, such as
+    numbers, incomes in currency format, usernames, texts themselves, phone
+    numbers, etc.
+  </p>
 </Post>
 
 <style>
@@ -11,5 +74,16 @@ import Post from "@/components/Post.astro";
     padding: 4rem;
     margin: auto;
     width: 100%;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
   }
 </style>
