@@ -1,12 +1,14 @@
 ---
 import Section from "@/components/Section.astro";
 import { projects } from "@cv";
+
+const projectsToRender = projects.slice(0, 9);
 ---
 
 <Section title="Projects">
   <ul>
     {
-      projects.map(({ name, isActive, description, highlights, url }, i) => (
+      projectsToRender.map(({ name, isActive, description, highlights, url }, i) => (
         <li class:list={[{ "no-print": i > 2 }]}>
           <article>
             <header>
