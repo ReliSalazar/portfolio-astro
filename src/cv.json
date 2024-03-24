@@ -131,6 +131,15 @@
   ],
   "projects": [
     {
+      "name": "Spotify Clone",
+      "isActive": true,
+      "startDate": "2024-03-20",
+      "endDate": null,
+      "description": "A clone of the popular music service Spotify, built using Astro—a modern front-end site generator that offers incredibly fast performance",
+      "highlights": ["Astro", "React", "Typescript", "Tailwind"],
+      "url": "/portfolio-astro/projects/spotify-clone"
+    },
+    {
       "name": "PDF Editor",
       "isActive": true,
       "startDate": "2023-12-11",

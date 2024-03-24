@@ -1,42 +1,31 @@
 ---
 import Section from "@/components/Section.astro";
 import { projects } from "@cv";
-
-let firstThreeProjects = [];
-if (projects.length > 2) {
-  firstThreeProjects.push(projects[0]);
-  firstThreeProjects.push(projects[1]);
-  firstThreeProjects.push(projects[2]);
-} else {
-  firstThreeProjects = projects;
-}
 ---
 
 <Section title="Projects">
   <ul>
     {
-      firstThreeProjects.map(
-        ({ name, isActive, description, highlights, url }) => (
-          <li>
-            <article>
-              <header>
-                <h3>
-                  <a href={url} title={`Go to the project ${name}`}>
-                    {name}
-                  </a>
-                  {isActive && <span>&bull;</span>}
-                </h3>
-                <p>{description}</p>
-              </header>
-              <footer>
-                {highlights.map((highlight) => (
-                  <span>{highlight}</span>
-                ))}
-              </footer>
-            </article>
-          </li>
-        )
-      )
+      projects.map(({ name, isActive, description, highlights, url }, i) => (
+        <li class:list={[{ "no-print": i > 2 }]}>
+          <article>
+            <header>
+              <h3>
+                <a href={url} title={`Go to the project ${name}`}>
+                  {name}
+                </a>
+                {isActive && <span>&bull;</span>}
+              </h3>
+              <p>{description}</p>
+            </header>
+            <footer>
+              {highlights.map((highlight) => (
+                <span>{highlight}</span>
+              ))}
+            </footer>
+          </article>
+        </li>
+      ))
     }
   </ul>
 
