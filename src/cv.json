@@ -98,18 +98,18 @@
       "keywords": ["Web Development", "Backend", "Desktop Development"]
     },
     {
+      "name": "Next.js",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Backend", "JavaScript", "TypeScript"]
+    },
+    {
       "name": "Node",
       "level": "Basic",
       "keywords": ["Web Development", "Backend", "JavaScript", "TypeScript"]
     },
     {
-      "name": "PHP",
-      "level": "Basic",
-      "keywords": ["Web Development", "Backend", "PHP"]
-    },
-    {
       "name": "MySQL",
-      "level": "Basic",
+      "level": "Intermediate",
       "keywords": ["Web Development", "Backend", "sql", "db"]
     }
   ],
@@ -130,6 +130,15 @@
     }
   ],
   "projects": [
+    {
+      "name": "Agorath, a Twitter Clone",
+      "isActive": true,
+      "startDate": "2024-03-24",
+      "endDate": null,
+      "description": "A clone of the popular site Twitter, built using Next.js and Supabase for the database.",
+      "highlights": ["Next.js", "React", "Typescript", "Tailwind", "Supabase"],
+      "url": "/portfolio-astro/projects/twitter-clone"
+    },
     {
       "name": "Spotify Clone",
       "isActive": true,

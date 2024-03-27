@@ -1,0 +1,61 @@
+---
+import Post from "@/components/Post.astro";
+---
+
+<Post
+  title="Agorath, a Twitter Clone"
+  header="/portfolio-astro/projects/twitter-clone/header.png"
+  publishDate="2024-03-20"
+>
+  <p>
+    A clone of the popular site Twitter, built using Next.js and Supabase for
+    the database.
+  </p>
+
+  <p>
+    I really enjoyed building this project, Next.js is an amazing tool, and also
+    I wanted to try Supabase.
+  </p>
+
+  <p class="note">
+    I only put an authentication with github, so if you want to check it out,
+    you will need an account!
+  </p>
+
+  <p>
+    I used NextUI for the first time on this project, and I'm very happy with
+    it. Also, as almost all the time, I used Tailwind for the rest of the
+    styling stuff.
+  </p>
+
+  <p>
+    If you want to, you can check a <a
+      href="https://agorath.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link"
+    >
+      live demo here
+    </a>, and if you want to read the code, you can go to the <a
+      href="https://github.com/ReliSalazar/agorath/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link"
+    >
+      github repo
+    </a>.
+  </p>
+</Post>
+
+<style>
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+  }
+</style>
