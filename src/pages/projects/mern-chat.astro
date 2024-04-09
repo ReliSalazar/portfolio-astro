@@ -1,0 +1,68 @@
+---
+import Post from "@/components/Post.astro";
+---
+
+<Post
+  title="MERN chat"
+  header="/portfolio-astro/projects/mern-chat/header.png"
+  publishDate="2024-03-20"
+>
+  <p>
+    A real time chat app built with React, Vite, Node, and Socket.io, and
+    deployed on Render. The app allows users to communicate with each other.
+  </p>
+
+  <p>
+    This is the first time I use DaisyUI, and I'm very happy with it. I also
+    used theme-change with it to get some themes on the layout and a more clean
+    html code.
+  </p>
+
+  <p>I used zustand to manage the state of the app, I really love it.</p>
+
+  <p>
+    And on the backend I used node, express and socket.io, with mongodb as
+    database.
+  </p>
+
+  <p>
+    It has online status for users, notifications of current chat, an animation
+    for the new messages, session cookies and the backend and more.
+  </p>
+
+  <p>
+    The passwords are encrypted, but the messages are not. So, please, be
+    careful.
+  </p>
+
+  <p>
+    If you want to, you can check a <a
+      href="https://mern-chat-r54m.onrender.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link"
+    >
+      live demo here</a
+    >, and if you want to read the code, you can go to the <a
+      href="https://github.com/ReliSalazar/mern-chat/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link"
+    >
+      github repo</a
+    >.
+  </p>
+</Post>
+
+<style>
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+  }
+</style>

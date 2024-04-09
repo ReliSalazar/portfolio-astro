@@ -131,6 +131,15 @@
   ],
   "projects": [
     {
+      "name": "MERN real time chat app",
+      "isActive": true,
+      "startDate": "2024-03-30",
+      "endDate": null,
+      "description": "A real time chat app built with React, Vite, Node, and Socket.io, and deployed on Render. The app allows users to communicate with each other.",
+      "highlights": ["Vite", "React", "Typescript", "Tailwind", "MongoDB", "Node", "DaisyUI"],
+      "url": "/portfolio-astro/projects/mern-chat"
+    },
+    {
       "name": "Agorath, a Twitter Clone",
       "isActive": true,
       "startDate": "2024-03-24",
